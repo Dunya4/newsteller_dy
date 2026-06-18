@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --Red: hsl(4, 100%, 67%);
+    --Blue: hsl(234, 29%, 20%);
+    --Blue-700: hsl(235, 18%, 26%);
+    --Grey-800: hsl(0, 0%,58%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Blue);
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card{
+    width: 55%;
+    display: flex;
+    background-color: var(--White);
+    border-radius: 2rem;
+}
+.card_left{
+width: 55%;
+padding: 4rem;
+}
+.card_left  h1{
+    color: var(--Blue);
+    font-size: 3rem;
+    white-space: nowrap;
+}
+.card_left  p{
+    color: var(--Blue-700);
+    font-size: 1rem;
+    padding: 1rem 0rem;
+}
+.card_list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+}
+.card_list li{
+    display: flex;
+    gap: 1.2rem;
+    white-space: nowrap;
+    font-size: 0.5rem;
+    padding: 0px , 20px, 0px ,0px;
+}   
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form label{
+    color: var(--Blue);
+    font-weight: 500;
+}
+.card_mail{
+padding: 1rem;
+border: 0.1rem solid var(--Grey-800);
+border-radius: 0.5rem;
+
+}
+.card_btn{
+padding: 1rem;
+margin: 1rem 0rem;
+border: white;
+border-radius: 0.5rem;
+background-color: var(--Blue);
+color: var(--White);
+font-weight: 500;
+letter-spacing: 1px;
+}
+.card_right{
+    width: 45%;
+    padding: 1rem;
+
+}
+.deskop_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.mobile_img{
+    display: none;
+}
+
+ /* Deskop message  */
+.confirm_active{
+    width: 30%;
+    background-color: var(--White);
+    border-radius: 2rem;
+    padding: 4rem;
+    color: var(--Blue);
+}
+.confirm_active h1{
+    font-size: 3rem;
+    margin: 1rem 0rem;
+}
+.confirm_active p{
+    font-size: 1.2rem;
+    margin: 1rem 0rem;
+}
+.active_btn{
+    padding: 1.5rem;
+    background-color: var(--Red);
+    border-radius: 0.8rem;
+    border-color: var(--Red);
+    color: var(--White);
+    text-align: center;
+    justify-content: center;
+    width: 25rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 600px) {
+.card{
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 0;
+}
+.card_left{
+    width: 100%;
+    padding: 1.5rem;
+}
+.card_left h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.card_left p{
+    font-size: 0.9rem;
+}
+.card_list li p{
+    white-space: wrap;
+    font-size: 0.9rem ;
+}
+form label{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.card_btn{
+    margin-top: 0.5rem ;
+    margin-bottom: 0.8rem;
+}
+.card_right{
+    width: 100%;
+    padding: 0rem;
+
+}
+.mobile_img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.deskop_img{
+    display: none;
+}
+}
