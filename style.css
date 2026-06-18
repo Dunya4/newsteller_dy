@@ -101,13 +101,16 @@ letter-spacing: 1px;
 }
 
  /* Deskop message  */
+ #error{
+    
+ }
 .confirm_active{
     width: 30%;
     background-color: var(--White);
     border-radius: 2rem;
     padding: 4rem;
     color: var(--Blue);
-      display: none ; 
+    display: none ; 
 }
 .confirm_active h1{
     font-size: 3rem;
@@ -134,11 +137,11 @@ letter-spacing: 1px;
     background-color: var(--Blue);
     border-color: var(--Blue);
 }
-.show{
+.confirm_active.show{
     display: block;
 }
-.block{
-    display: none;
+.hidden{
+    display: none !important;
 }
 @media only screen and (max-width: 600px) {
 .card{
