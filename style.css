@@ -107,6 +107,7 @@ letter-spacing: 1px;
     border-radius: 2rem;
     padding: 4rem;
     color: var(--Blue);
+      display: none ; 
 }
 .confirm_active h1{
     font-size: 3rem;
@@ -115,6 +116,7 @@ letter-spacing: 1px;
 .confirm_active p{
     font-size: 1.2rem;
     margin: 1rem 0rem;
+  
 }
 .active_btn{
     padding: 1.5rem;
@@ -127,9 +129,17 @@ letter-spacing: 1px;
     width: 25rem;
     font-size: 1.2rem;
     cursor: pointer;
-
 }
-
+.active_btn:hover{
+    background-color: var(--Blue);
+    border-color: var(--Blue);
+}
+.show{
+    display: block;
+}
+.block{
+    display: none;
+}
 @media only screen and (max-width: 600px) {
 .card{
     width: 100%;
