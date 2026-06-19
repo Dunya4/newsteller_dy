@@ -35,9 +35,11 @@
           </ul>
       </div>
         <form class="card_form">
-        <label for="email">Email address</label>
+          <div class="send_card">
+            <label for="email">Email address</label>
+            <p id="error"></p>
+          </div>
         <input class="card_mail" type="email" value="" placeholder="email@company.com">
-        <p id="error"></p>
         <input class="card_btn" type="submit" value="Subscribe to monthly newsletter">
        </form>
     </div>
@@ -45,15 +47,17 @@
 <img class="mobile_img" src="/assets/images/illustration-sign-up-mobile.svg" alt="">  
 <img class="deskop_img" src="/assets/images/illustration-sign-up-desktop.svg" alt="">
 </div>
+</div>
   <div class="confirm_active">
+    <div class="confirm_content">
     <img src="/assets/images/icon-success.svg" alt="active">
-    <h1> Thanks for subscribing </h1>
-    <p>A confirmation email has been sent to <strong>ash@loremcompany.com.</strong> Please open it and click the button inside to confirm your subscription.</p>
+    <h1> Thanks for subscribing! </h1>
+    <p>A confirmation email has been sent to <strong class="send_mail"></strong> Please open it and click the button inside to confirm your subscription.</p>
+    </div>
     <input class="active_btn" type="button" value="Dismiss message">
   </div>
-</div>
   </div>
-<div>
+<!-- <div> -->
 
 
 
@@ -62,7 +66,7 @@
   <!-- Success message start -->
 
   <!-- Success message end -->
-  <script src="app.js"></script>ri
+  <script src="app.js"></script>
 
 </body>
 </html>
