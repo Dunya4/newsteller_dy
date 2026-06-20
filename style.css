@@ -59,9 +59,6 @@ gap: 1.5rem;
 .send_card{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
 }
 
 form{
@@ -72,13 +69,12 @@ form{
 form label{
     color: var(--Blue);
     font-weight: 500;
-    /* padding-top: 0.5rem; */
 }
 .card_mail{
 padding: 1rem;
 border: 0.1rem solid var(--Grey-800);
 border-radius: 0.5rem;
-
+cursor: pointer;
 }
 .card_btn{
 padding: 1rem;
@@ -88,7 +84,10 @@ border-radius: 0.5rem;
 background-color: var(--Blue);
 color: var(--White);
 font-weight: 500;
-/* letter-spacing: 1px; */
+}
+.card_btn:hover{
+cursor: pointer;
+background-image: linear-gradient(to right,  #FF586D, #FF6549 );
 }
 .card_right{
     width: 45%;
@@ -106,7 +105,6 @@ font-weight: 500;
     display: none;
 }
 
- /* Deskop message  */
  #error{
     color: var(--Red);
     font-size: 1rem;
@@ -118,13 +116,8 @@ font-weight: 500;
     border-color: var(--Red);
     color:var(--Red) ;
  }
- /* .card_mail.error_mode::placeholder{
-    color: var(--Red);
- } */
+    
 .confirm_active{
-    /* display: flex;
-    flex-direction: column;
-    gap: 2rem; */
     width: 30%;
     background-color: var(--White);
     border-radius: 2rem;
@@ -217,6 +210,4 @@ form label{
 margin-top: 5.5rem;
 margin-bottom: 12rem;
 }
-
-
 }
